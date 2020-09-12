@@ -22,16 +22,15 @@ header {
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  background: #c39bd3;
+  margin-left: 120px;
+  margin-right: 120px;
   display: flex;
   justify-content: space-between;
 }
 
 .header-left {
-  background-color: white;
-  width: 50%;
-  height: 60px;
+  /* background-color: white; */
   display: flex;
   align-items: center;
   padding-left: 16px;
@@ -52,21 +51,22 @@ input {
   width: 420px;
   height: 40px;
   padding: 8px;
+  font-size: 16px;
 }
 
 .header-right {
-  width: 50%;
   height: 60px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding-right: 16px;
 }
 
 .profile-img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  margin-right: 20px;
 }
 
 .new-post {
@@ -87,23 +87,106 @@ input {
   background-color: #323ebe;
 }
 
-.den {
-  background: chartreuse;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: baseline;
-}
 .header-right-icon {
   width: 24px;
   height: 24px;
   margin-right: 20px;
-  color: red;
-
-  /* color: #D5DBDB; */
+  color: black;
 }
 
-.header-right-icon:hover {
+.wrapper {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 240px 650px 325px;
+  gap: 16px;
+  grid-auto-rows: minmax(10px, auto);
+  color: #444;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 16px;
 }
+
+.one {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  gap: 10px;
+}
+.two {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* ----------Sidebar Profile Content------------ */
+
+.sidebar-profile-content {
+  background: chartreuse;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.sidebar-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.sidebar-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+  padding-left: 8px;
+}
+
+.sidebar-profile > small {
+  opacity: 0.5;
+}
+
+.sidebar-profile-content:hover {
+  background-color: violet;
+  color: black;
+}
+
+/* ------------Sidebar Content--------------*/
+
+.sidebar-content {
+  background: chartreuse;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.sidebar-content:hover {
+  background-color: violet;
+  color: black;
+}
+
+.sidebar-profile-content:hover {
+  background-color: violet;
+  color: black;
+}
+
+.sidebar-content p {
+  padding-left: 7px;
+  color: white;
+}
+
+/* ----------------------------------------- */
