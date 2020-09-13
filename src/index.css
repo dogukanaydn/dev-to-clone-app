@@ -21,6 +21,8 @@ header {
   height: 60px;
 }
 
+/* ----------Header Content------------ */
+
 .container {
   background: #c39bd3;
   margin-left: 120px;
@@ -94,6 +96,8 @@ input {
   color: black;
 }
 
+/* ----------Grid Layout------------ */
+
 .wrapper {
   background-color: red;
   display: grid;
@@ -135,58 +139,54 @@ input {
 
 /* ----------Sidebar Profile Content------------ */
 
-.sidebar-profile-content {
-  background: chartreuse;
-  color: black;
+.sidebar-profile {
+  background: seagreen;
   padding: 8px;
   border-radius: 5px;
 }
 
-.sidebar-img {
+.sidebar-profile img {
+  background: seagreen;
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
 
-.sidebar-profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: black;
+.sidebar-profile-details {
+  /* background: royalblue; */
   padding-left: 8px;
 }
 
-.sidebar-profile > small {
-  opacity: 0.5;
+.sidebar-profile:hover {
+  background: plum;
 }
 
-.sidebar-profile-content:hover {
-  background-color: violet;
-  color: black;
-}
-
-/* ------------Sidebar Content--------------*/
+/*--------------------Sİdebar Content-------------*/
 
 .sidebar-content {
-  background: chartreuse;
-  color: black;
+  background: cyan;
   padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.sidebar-content-svg {
+  /* background: cyan; */
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.sidebar-content-rl {
+  background: rebeccapurple;
+  color: white;
+  margin-left: auto;
+  padding: 4px;
   border-radius: 5px;
 }
 
 .sidebar-content:hover {
-  background-color: violet;
-  color: black;
+  background: plum;
 }
-
-.sidebar-profile-content:hover {
-  background-color: violet;
-  color: black;
-}
-
-.sidebar-content p {
-  padding-left: 7px;
-  color: white;
-}
-
-/* ----------------------------------------- */

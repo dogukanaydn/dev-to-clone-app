@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import SidebarProfile from "./components/SidebarProfile";
-import SidebarContent from "./components/SidebarContent";
+import SidebarContentUpList from "./components/SidebarContentUpList";
 
 function App() {
   return (
@@ -10,13 +10,15 @@ function App() {
       <Navbar />
       <div className="wrapper">
         <div className="one">
-          <SidebarProfile />
-          <SidebarContent />
-          <SidebarContent />
-          <SidebarContent />
-          <SidebarContent />
-          <SidebarContent />
-          <SidebarContent />
+          <div>
+            <SidebarProfile />
+          </div>
+          <div>
+            <SidebarContentUpList />
+          </div>
+          <div>
+            <p>SidebarContentDownList</p>
+          </div>
         </div>
         <div className="two">
           <p>Two</p>
