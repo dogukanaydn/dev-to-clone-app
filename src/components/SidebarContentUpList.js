@@ -1,5 +1,5 @@
 import React from "react";
-import SidebarContentUpItem from "./SidebarContentUpItem";
+import SidebarContentUpListItem from "./SidebarContentUpListItem";
 import { RiFileList3Line } from "react-icons/ri";
 import { GiRead, GiEggPod } from "react-icons/gi";
 import { ImVideoCamera } from "react-icons/im";
@@ -8,24 +8,24 @@ import { BsTagFill } from "react-icons/bs";
 export default function SidebarContentUpList() {
   return (
     <React.Fragment>
-      <SidebarContentUpItem
+      <SidebarContentUpListItem
         icon={<GiRead className="sidebar-content-svg" />}
         name="Reading List"
         value="5"
       />
-      <SidebarContentUpItem
+      <SidebarContentUpListItem
         icon={<RiFileList3Line className="sidebar-content-svg" />}
         name="Listings"
       />
-      <SidebarContentUpItem
+      <SidebarContentUpListItem
         icon={<GiEggPod className="sidebar-content-svg" />}
         name="Podcasts"
       />
-      <SidebarContentUpItem
+      <SidebarContentUpListItem
         icon={<ImVideoCamera className="sidebar-content-svg" />}
         name="Videos"
       />
-      <SidebarContentUpItem
+      <SidebarContentUpListItem
         icon={<BsTagFill className="sidebar-content-svg" />}
         name="Tags"
       />
