@@ -28,7 +28,18 @@ export default function Navbar() {
             Write a post
           </a>
           <a href="#" id="connect-link" aria-label="Connect">
-            <FaRegComment className="header-right-icon" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              role="img"
+              aria-labelledby="a6y9hw1w52v19b0fkolzqw2783yzzljb"
+              className="header-right-icon"
+            >
+              <title id="a6y9hw1w52v19b0fkolzqw2783yzzljb">Connect</title>
+              <path d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10H2l2.929-2.929A9.969 9.969 0 012 12zm4.828 8H12a8 8 0 10-8-8c0 2.152.851 4.165 2.343 5.657l1.414 1.414-.929.929zM8 13h8a4 4 0 11-8 0z"></path>
+            </svg>
           </a>
           <a href="#" aria-label="Notifications">
             <RiNotification3Line className="header-right-icon" />

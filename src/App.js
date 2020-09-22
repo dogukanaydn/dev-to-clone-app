@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import SidebarProfile from "./components/SidebarProfile";
 import SidebarContentUpList from "./components/SidebarContentUpList";
 import SidebarContentDownList from "./components/SidebarContentDownList";
-import Card from "./components/Card";
+import Feed from "./components/Feed";
 
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
           <div>
             <SidebarContentUpList />
           </div>
-          <div className="ScrollStyle">
+          <div className="scrollStyle">
             <SidebarContentDownList />
           </div>
         </div>
         <div className="two">
-          <Card />
+          <Feed />
         </div>
         <div className="three">
           <p>Three</p>

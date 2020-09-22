@@ -10,15 +10,26 @@ body {
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-a {
-  text-decoration: none;
-  display: flex;
-}
-
 header {
   background: white;
   width: 100%;
   height: 60px;
+}
+
+input {
+  margin-left: 15px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  width: 420px;
+  height: 40px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* ----------Header Content------------ */
@@ -42,18 +53,6 @@ header {
   width: 50px;
   height: 50px;
   color: white;
-}
-
-input {
-  margin-left: 15px;
-  background-color: white;
-  color: black;
-  border-radius: 5px;
-  border: 1px solid #bdc3c7;
-  width: 420px;
-  height: 40px;
-  padding: 8px;
-  font-size: 16px;
 }
 
 .header-right {
@@ -124,7 +123,6 @@ input {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 8px;
   grid-column: 2;
   grid-row: 1;
 }
@@ -141,6 +139,7 @@ input {
 
 .sidebar-profile {
   background: seagreen;
+  display: flex;
   padding: 8px;
   border-radius: 5px;
 }
@@ -209,9 +208,9 @@ input {
   margin-left: auto;
 }
 
-/*           */
+/*------------Scrollbar-------------------*/
 
-.ScrollStyle {
+.scrollStyle {
   background-color: lightblue;
   width: 100%;
   height: 45%;
@@ -220,4 +219,118 @@ input {
 
 .other-tags {
   border-top: 10px solid rgb(193, 230, 28);
+}
+
+.feed {
+  /* background-color: cyan; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.den {
+  background: #f8c471;
+}
+.feed-bar {
+  background: rebeccapurple;
+  color: white;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 8px;
+  position: relative;
+}
+
+.feed-bar.active {
+  background-color: cyan;
+  border-bottom: 3px solid red;
+}
+
+.feed-bar:hover {
+  background-color: #4150f5;
+  content: "";
+  width: 100%;
+  /* bottom: 10px; */
+  border-bottom: 3px solid red;
+}
+
+.card {
+  margin-top: 15px;
+  background-color: peru;
+}
+
+.card-cover-img {
+  width: 650px;
+  border-radius: 5px;
+}
+
+.card-profile {
+  background-color: seagreen;
+  display: flex;
+  align-items: center;
+}
+
+.card-profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.card-profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card-profile-date {
+  font-size: 12px;
+}
+
+.card-description {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card-description:hover {
+  color: #3b49df;
+}
+
+.card-tag {
+  background: rosybrown;
+}
+
+.card-tag span {
+  padding: 4px;
+}
+
+.den1 {
+  background-color: springgreen;
+}
+
+.den2 {
+  background-color: tomato;
+  padding-left: 40px;
+}
+
+.card-inside {
+  background-color: violet;
+  padding: 16px;
+}
+
+.card-react-part {
+  background-color: teal;
+  display: flex;
+}
+
+.card-react-part-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.den3 {
+  background-color: cyan;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
