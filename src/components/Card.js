@@ -9,6 +9,9 @@ export default function Card() {
         src="https://res.cloudinary.com/practicaldev/image/fetch/s--LkHZ1ztk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/obzhaylsi0u7qrzbkhuc.jpg"
         className="card-cover-img"
       />
+
+      {/* --------------------profile part-------------------- */}
+
       <div className="card-inside">
         <div className="card-profile">
           <img
@@ -16,13 +19,15 @@ export default function Card() {
             alt="Profile-Image"
             className="card-profile-img"
           />
-          <div className="den1">
+          <div>
             <p className="card-profile-name">Doğukan Aydın</p>
             <p className="card-profile-date">Sep 22</p>
           </div>
         </div>
 
-        <div className="den2">
+        {/* --------------------description part-------------------- */}
+
+        <div className="card-desc-info">
           <p className="card-description">
             Pullstate - Simple hooks-based state management for React
           </p>
@@ -32,20 +37,27 @@ export default function Card() {
             <span>#javascript</span>
             <span>#javascript</span>
           </div>
-          {/* <div className="card-react-part">
-            <div className="den3">
-              <span>
-                <RiHeart2Line className="card-react-part-icon" /> 30 reactions
-              </span>
-              <span>
-                <FaRegComment className="card-react-part-icon" /> 30 comment
-              </span>
-            </div>
-            <button>Save</button>
-          </div> */}
+        </div>
+
+        {/* --------------------reaction & comment part-------------------- */}
+
+        <div className="card-bottom">
+          <div className="card-react">
+            <a href="#" className="card-react-link">
+              <RiHeart2Line className="card-react-icons" />
+              <span>15 reactions</span>
+            </a>
+            <a href="#" className="card-react-link">
+              <FaRegComment className="card-react-icons" />
+              <span>22 comments</span>
+            </a>
+          </div>
+          <div className="card-bottom-right">
+            <small className="card-bottom-sm">3 min read</small>
+            <button className="card-bottom-btn">Save</button>
+          </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

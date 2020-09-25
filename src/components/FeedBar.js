@@ -4,7 +4,7 @@ export default function FeedBar() {
   return (
     <div className="feed">
       <h2>Posts</h2>
-      <div className="den">
+      <div>
         <a href="#" className="feed-bar active ">
           Feed
         </a>

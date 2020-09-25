@@ -15,9 +15,11 @@ function App() {
           <div>
             <SidebarProfile />
           </div>
-          <div>
+          <div className="hr"></div>
+          <div className="sidebar-content-div">
             <SidebarContentUpList />
           </div>
+          <div className="hr"></div>
           <div className="scrollStyle">
             <SidebarContentDownList />
           </div>

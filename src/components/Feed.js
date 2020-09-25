@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import FeedBar from "./FeedBar";
 import Card from "./Card";
 
 export default function Feed() {
   return (
-    <div>
+    <Fragment>
       <FeedBar />
       <Card />
-      {/* <Card /> */}
-    </div>
+      <Card />
+    </Fragment>
   );
 }

@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #a6acaf;
+  background-color: #eef0f1;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -35,7 +35,7 @@ a {
 /* ----------Header Content------------ */
 
 .container {
-  background: #c39bd3;
+  background: white;
   margin-left: 120px;
   margin-right: 120px;
   display: flex;
@@ -98,7 +98,7 @@ a {
 /* ----------Grid Layout------------ */
 
 .wrapper {
-  background-color: red;
+  /* background-color: red; */
   display: grid;
   grid-template-columns: 240px 650px 325px;
   gap: 16px;
@@ -110,7 +110,7 @@ a {
 }
 
 .one {
-  background-color: #444;
+  /* background-color: #444; */
   color: #fff;
   border-radius: 5px;
   padding: 8px;
@@ -120,14 +120,14 @@ a {
   gap: 10px;
 }
 .two {
-  background-color: #444;
+  /* background-color: #444; */
   color: #fff;
   border-radius: 5px;
   grid-column: 2;
   grid-row: 1;
 }
 .three {
-  background-color: #444;
+  /* background-color: #444; */
   color: #fff;
   border-radius: 5px;
   padding: 8px;
@@ -138,10 +138,11 @@ a {
 /* ----------Sidebar Profile Content------------ */
 
 .sidebar-profile {
-  background: seagreen;
   display: flex;
+  color: black;
   padding: 8px;
   border-radius: 5px;
+  /* border: 1px solid #424949; */
 }
 
 .sidebar-profile img {
@@ -157,43 +158,54 @@ a {
 }
 
 .sidebar-profile:hover {
-  background: plum;
+  /* border: 1px solid #bdc3c7; */
+  background: #bdc3c7;
+  color: #3b49df;
 }
 
-/*--------------------Sİdebar Content-------------*/
+.hr {
+  border-bottom: 1px solid #424949;
+}
+
+/*--------------------Sidebar Content-------------*/
+
+.sidebar-content-div {
+  /* border: 1px solid #424949; */
+  border-radius: 5px;
+}
 
 .sidebar-content {
-  background: cyan;
+  color: black;
   padding: 8px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   border-radius: 5px;
 }
 
 .sidebar-content-svg {
-  /* background: cyan; */
   width: 24px;
   height: 24px;
   margin-right: 8px;
 }
 
 .sidebar-content-rl {
-  background: rebeccapurple;
-  color: white;
+  background-color: #bdc3c7;
+  color: black;
   margin-left: auto;
   padding: 4px;
   border-radius: 5px;
 }
 
 .sidebar-content:hover {
-  background: plum;
+  border: none;
+  background: #bdc3c7;
+  color: #3b49df;
 }
 
 /* */
 
 .my-tags {
-  background-color: red;
+  color: black;
   font-size: 12px;
   font-weight: 700;
   padding: 8px;
@@ -211,29 +223,25 @@ a {
 /*------------Scrollbar-------------------*/
 
 .scrollStyle {
-  background-color: lightblue;
   width: 100%;
   height: 45%;
   overflow: auto;
 }
 
 .other-tags {
-  border-top: 10px solid rgb(193, 230, 28);
+  border-top: 2px solid #3b49df;
 }
 
 .feed {
-  /* background-color: cyan; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
 }
 
-.den {
-  background: #f8c471;
-}
 .feed-bar {
-  background: rebeccapurple;
-  color: white;
+  background-color: #eef0f1;
+  color: black;
   margin-left: 4px;
   margin-right: 4px;
   padding: 8px;
@@ -241,21 +249,25 @@ a {
 }
 
 .feed-bar.active {
-  background-color: cyan;
+  background-color: #aed6f1;
   border-bottom: 3px solid red;
 }
 
 .feed-bar:hover {
-  background-color: #4150f5;
+  background-color: #aed6f1;
+  color: #3b49df;
   content: "";
   width: 100%;
   /* bottom: 10px; */
   border-bottom: 3px solid red;
 }
 
+/*-------------card part-------------*/
+
 .card {
   margin-top: 15px;
-  background-color: peru;
+  background-color: white;
+  border-radius: 5px;
 }
 
 .card-cover-img {
@@ -263,8 +275,14 @@ a {
   border-radius: 5px;
 }
 
+.card-inside {
+  color: black;
+  padding: 16px;
+}
+
 .card-profile {
-  background-color: seagreen;
+  color: black;
+
   display: flex;
   align-items: center;
 }
@@ -286,6 +304,11 @@ a {
   font-size: 12px;
 }
 
+.card-desc-info {
+  padding-left: 40px;
+  color: black;
+}
+
 .card-description {
   font-size: 24px;
   font-weight: 700;
@@ -293,44 +316,66 @@ a {
 }
 
 .card-description:hover {
-  color: #3b49df;
+  color: #323ebe;
 }
 
 .card-tag {
-  background: rosybrown;
+  color: black;
 }
 
 .card-tag span {
   padding: 4px;
 }
 
-.den1 {
-  background-color: springgreen;
-}
-
-.den2 {
-  background-color: tomato;
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
   padding-left: 40px;
+  margin-top: 8px;
 }
 
-.card-inside {
-  background-color: violet;
-  padding: 16px;
-}
-
-.card-react-part {
-  background-color: teal;
+.card-react {
   display: flex;
 }
 
-.card-react-part-icon {
-  width: 24px;
-  height: 24px;
-}
-
-.den3 {
-  background-color: cyan;
+.card-react-link {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px 4px 8px;
   color: black;
+}
+
+.card-react-link:hover {
+  background-color: #d7dbdd;
+  border-radius: 5px;
+}
+
+.card-react-icons {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.card-buttom-right {
   display: flex;
-  justify-content: center;
+  align-items: center;
+}
+
+.card-bottom-sm {
+  margin-right: 8px;
+}
+
+.card-bottom-btn {
+  padding: 8px 12px;
+  border: none;
+  background-color: #d7dbdd;
+  font-size: 14px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-bottom-btn:hover {
+  background-color: #bdc3c7;
+  color: black;
 }
